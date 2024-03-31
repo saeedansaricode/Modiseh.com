@@ -1,0 +1,4 @@
+tamamie slider ha buge andaze va tedade slide va code haie js darand
+
+js bakhshe "about us" moshkel darad :
+matn ha bad az click shodane "bishtar va kamtar" colaps nmishavand
