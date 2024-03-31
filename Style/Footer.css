@@ -106,3 +106,39 @@ a {
 #footer > .section-2 > .icons > a > img {
     margin-right: 5px;
 }
+
+/* ---- Footer Section 3 ---- */
+#footer > .section-3 {
+    width: 70%;
+    margin: 80px auto;
+    background-color: #f1f1f1;
+    background-image: url(./Images/Footer/Section3/Mask_Group.svg);
+    background-repeat: no-repeat;
+    background-position: 75%;
+    border-radius: 5px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer > .section-3 > h3 {
+    font-weight: 100;
+}
+
+#footer > .section-3 > .apps {
+    display: flex;
+    width: 70%;
+}
+#footer > .section-3 > .apps > a > img{
+    width: 90%;
+}
+
+/* ---- Footer CopyRight ---- */
+
+#footer > p {
+    margin: 30px;
+    font-size: 13px;
+    color: #a7b7dd;
+    text-align: center;
+    padding: 10px 0;
+}
