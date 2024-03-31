@@ -1,10 +1,45 @@
-/* ---- Why Us ---- */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* ---- Magazine ---- */
+#magazine > .container {
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: column;
+    gap: 12px;
+}
+
+#magazine > .container > a{
+    text-decoration: none;
+    color: black;
+}
+
+#magazine > .container > a > h3 {
+    font-family: yekan;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 100;
+}
+#magazine > .container > a > h3:hover {
+    color: #817d7c;
+}
+
+#magazine > .container > .item {
+    display: flex;
+    gap: 15px;
+}
+
+#magazine > .container > .item > a > img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+/* ---- Why Us ---- */
 #why-us > .container {
     width: 50%;
     margin: 40px auto;
