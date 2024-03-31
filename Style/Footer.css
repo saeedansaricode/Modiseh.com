@@ -49,3 +49,60 @@ a {
 #footer > .section-1 > .conect-us > div > img {
     vertical-align: middle;
 }
+
+/* ---- Footer Section 2 ---- */
+
+#footer > .section-2 {
+    width: 70%;
+    margin: 0px auto;
+    border-top: 1px solid #889098 ;
+    padding: 10px 10px;
+
+    display: flex;
+    justify-content: space-between;
+    color: #889098;
+    align-items: center;
+    
+}
+
+#footer > .section-2 > .search-box {
+    width: 40%;
+
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+}
+
+::placeholder {
+    font-family: yekan;
+    color: #889098;
+}
+
+#footer > .section-2 > .search-box > input {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 80%;
+    padding-right: 10px;
+}
+
+#footer > .section-2 > h4 {
+    font-weight: 100;
+}
+
+#footer > .section-2 > .search-box > button {
+    width: 20%;
+    border-radius: 8px;
+    background-color: #bc264b;
+    
+    font-family: yekan;
+    font-size: 16px;
+    color: #fff;
+
+    border: none;
+    cursor: pointer;
+}
+
+#footer > .section-2 > .icons > a > img {
+    margin-right: 5px;
+}
