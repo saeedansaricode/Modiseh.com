@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ---- Footer ---- */
+
+#footer {
+    background-color: #f9f9f9;
+    font-family: yekan;
+    direction: rtl;
+    font-weight: 100;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ---- Footer Section 1 ---- */
+
+#footer > .section-1 {
+    width: 70%;
+    height: 335px;
+    margin: 0px auto;
+    padding-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #889098;
+}
+
+#footer > .section-1 > ul > li > a {
+    font-size: 16px;
+    color: #889098;
+    line-height: 45px;
+}
+
+#footer > .section-1 > .conect-us {
+    width: 25%;
+    line-height: 30px;
+}
+
+#footer > .section-1 > .conect-us > div > img {
+    vertical-align: middle;
+}
