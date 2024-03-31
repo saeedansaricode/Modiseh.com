@@ -1,0 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+#goUp {
+    background: url(../Images/Body/up.png) no-repeat 50%;
+    box-shadow: 4px 6px 8px rgb(194, 194, 194);
+    border-radius: 50%;
+    padding: 25px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}

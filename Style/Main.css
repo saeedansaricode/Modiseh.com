@@ -74,7 +74,8 @@
     margin: 50px auto;
     width: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
 
 }
 .category > .container > a {
@@ -201,6 +202,7 @@
     width: 70%;
     margin: 50px auto;
     display: flex;
+    justify-content: center;
     gap: 15px;
 
     font-family: yekan;
@@ -211,6 +213,10 @@
     font-size: 16px;
     text-align: justify;
     color: #1a1a1a;
+}
+
+#about-us > .container > .right > #moreText {
+    display: none;
 }
 
 #about-us > .container > .right > h3 {
