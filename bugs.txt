@@ -1,4 +1,18 @@
-tamamie slider ha buge andaze va tedade slide va code haie js darand
+responsive:
+site responsive nist.
 
-js bakhshe "about us" moshkel darad :
-matn ha bad az click shodane "bishtar va kamtar" colaps nmishavand
+slider ha:
+tamamie slider ha buge andaze va tedade slide va code haie js darand.
+
+about us:
+matn ha bad az click shodane "bishtar va kamtar" colaps nemishavand.
+
+mini slider 1:
+robane off dorost shavad.
+
+js:
+parametric kardane function ha
+
+css:
+1. justify contente list haie darone menu.
+2. asle "kiss" dar markup reaiat nashode. khili ul li ul li hast.

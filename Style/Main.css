@@ -6,34 +6,35 @@
 
 
 /* ---- Slider ---- */
-.slider {
+#slider {
     width: 100%;
     height: 437px;
     overflow: hidden;
 }
 
-.slider > #gallery {
+#slider > #gallery {
     width: 500%;
     display: flex;
     position: relative;
     left: 0%;
+    transition: 1s;
 }
 
-.slider > #gallery > a {
+#slider > #gallery > a {
     width: 20%;
 }
-.slider > #gallery > a > img {
+#slider > #gallery > a > img {
     width: 100%;
 }
 
-.slider > #right {
+#slider > #right {
     position: relative;
     top: -250px;
     right: 25px;
     color: #fff;
     cursor: pointer;
 }
-.slider > #left {
+#slider > #left {
     position: relative;
     top: -250px;
     right: 1300px;
@@ -41,7 +42,7 @@
     cursor: pointer;
 }
 
-.slider > #button {
+#slider > #button {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -52,19 +53,18 @@
     position: relative;
     top: -100px;
 }
-.slider > #button > li {
+#slider > #button > li {
     width: 12px;
     height: 12px;
-    transition: width 0.5s;
+    transition: width 2s;
     background: rgb(255, 237, 237);
     border-radius: 50px;
 }
-.slider > #button > li:hover {
-    /* width: 35px; */
+#slider > #button > li:hover {
     background-color: #bc264b;
 }
 
-.slider > #button > li.selected {
+#slider > #button > li.selected {
     width: 35px;
     background-color: #bc264b;
 }
@@ -85,14 +85,14 @@
     color: #737e86;
 }
 .category > .container > a > img {
-    width: 110px;
+    width: 100%;
     border-radius: 10px;
 }
 
 .category > .container > a > span {
     margin-top: 5px;
     font-family: yekan;
-    font-size: 14px;
+    font-size: 0.9em;
     text-align: center;
 
 }
@@ -102,35 +102,163 @@
     width: 70%;
     margin: 40px auto;
     display: flex;
-    flex-flow: column;
-}
-
-#poster-2 > .container > .top {
-    width: 100%;
-    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
     gap: 15px;
 }
 
-#poster-2 > .container > .top > .item {
-    width: 50%;
+#poster-2 > .container > .small {
+    width: 25%;
+    height: 240px;
+    flex-grow: 1;
 }
 
-#poster-2 > .container > .top > .item > img{
-    width: 100%;
-    border-radius: 10px;
+#poster-2 > .container > .big {
+    height: 110px;
+    flex-grow: 2;
 }
 
-#poster-2 > .container > .item {
-    border-radius: 10px;
-    width: 100%;
-    height: 30%;
-} 
+#poster-2 > .container > .big2 {
+    height: 220px;
+    flex-grow: 2;
+}
 
-#poster-2 > .container > .item > img {
+#poster-2 > .container >.item > img{
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    margin-top: 12px;
+}
+
+/* ---- Mini Slider 1 ---- */
+#miniSlider1 {
+    width: 80%;
+    height:300px;
+    margin:100px auto;
+    
+    position:relative;
+    overflow: hidden;
+    
+}
+
+#miniSlider1 > #gal1 {
+    width: 180%;
+    height: 100%;
+    
+    transition: 0.5s;
+    position: relative;
+    left: 0%;
+    display: flex;
+    justify-content: right;
+    gap: 1%;
+}
+
+#miniSlider1 > #gal1 > .items {
+    width: 170px;
+    height: 100%;
+    text-align: center;
+    
+    position: relative;
+    border:1px solid #eee;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+#miniSlider1 > #gal1 > .title{
+    border: none;
+}
+
+#miniSlider1 > #gal1 > .seeAll {
+    background-color: #bc264b;
+    color: #fff;
+    text-align: center;
+    line-height: 225px;
+}
+
+#miniSlider1 > #gal1 > .items > img{
+    height: 40%;
+    margin-top: 50px;
+}
+#miniSlider1 > #gal1 > .title > img{
+    margin-top: 0;
+    width: 100%;
+    height:105%;
+    position: relative;
+    top: -5px;
+}
+
+#miniSlider1 > #gal1 > .items > h2{
+    font-weight: 300;
+    font-size:20px;
+    margin:10px;
+}
+
+#miniSlider1 > #gal1 > .items > .break{
+    font-size: 12px;
+    text-align: right;
+}
+
+#miniSlider1 > #gal1 > .items > .price{
+    color:#6fcf97;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#miniSlider1 > #gal1 > .items > .off > .off-text{
+
+    color:#fff;
+    font-weight: 600;
+    letter-spacing: -2px;
+    font-size: 14px;
+    background: #bc264b;
+    padding:12px 4px;
+    border-radius:5px 5px 0px 0px;
+    position:absolute;
+    top: 0px;
+    left: 10px;
+}
+
+#miniSlider1 > #gal1 > .items > .left{
+    font-size: 11px;
+    color: #f5a0a0;
+    text-align: right;
+    margin: 0 0 5px;
+}
+
+
+#miniSlider1 > #right1 {
+    transition:0.2s;
+    background: url(../Images/Main/MiniSlider1/right.png) 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-size: 90%;
+    justify-items: center;
+    cursor:pointer;
+    width: 40px;
+    height: 50px;
+    position:absolute;
+    top:90px;
+    right:0;
+
+    border: 1px solid gray;
+    border-radius: 5px;
+    visibility: visible;
+}
+
+#miniSlider1 > #left1 {
+    transition:0.2s;
+    background: url(../Images/Main/MiniSlider1/left.png) 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-size: 90%;
+    justify-items: center;
+    cursor:pointer;
+    width: 40px;
+    height: 50px;
+    position:absolute;
+    top:90px;
+    left:0;
+    
+    border: 1px solid gray;
+    border-radius: 5px;
+    visibility: visible;
 }
 
 /* ---- Magazine ---- */
@@ -150,7 +278,7 @@
 #magazine > .container > a > h3 {
     font-family: yekan;
     text-align: center;
-    font-size: 26px;
+    font-size: 1.8em;
     font-weight: 100;
 }
 #magazine > .container > a > h3:hover {
@@ -159,11 +287,22 @@
 
 #magazine > .container > .item {
     display: flex;
+    flex-flow: row wrap;
     gap: 15px;
+}
+
+#magazine > .container > .item > a{
+    height: 240px;
+    flex-grow: 1;
+}
+
+#magazine > .container > .item > a > .big{
+    flex-grow: 2;
 }
 
 #magazine > .container > .item > a > img{
     width: 100%;
+    height: 100%;
     border-radius: 5px;
 }
 
@@ -175,10 +314,12 @@
     font-family: yekan;
     display: flex;
     flex-flow: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 25px;
 }
 
 #why-us > .container > a {
+    width: 150px;
     text-decoration: none;
     display: flex;
     flex-flow: column;
@@ -194,7 +335,6 @@
     color: #817d7c;
     font-size: 14px;
     text-align: center;
-    
 }
 
 /* ---- About Us ---- */
@@ -210,7 +350,6 @@
 
 #about-us > .container > .right {
     width: 60%;
-    font-size: 16px;
     text-align: justify;
     color: #1a1a1a;
 }
@@ -221,7 +360,7 @@
 
 #about-us > .container > .right > h3 {
     margin-bottom: 25px;
-    font-size: 25px;
+    font-size: 1.5em;
 }
 
 #about-us > .container > .right > #showHide:hover {

@@ -11,7 +11,7 @@
 /* ---- Header Bottom ---- */
 .header > .bottom {
     width: 75%;
-    margin: 25px auto;
+    margin: 20px auto;
     display: flex;
     justify-content: center;
 
@@ -59,17 +59,72 @@
 .header > .bottom > .center > .menu > ul {
     display: flex;
     list-style: none;
+
     justify-content: space-between;
-    margin: 10px 0;
+    padding: 10px 0;
     font-size: 14px;
     color: #889098;
+    position: relative;
 }
 
 .header > .bottom > .center > .menu > ul > li {
     cursor: pointer;
+    height: 30px;
 }
 
+.header > .bottom > .center > .menu > ul > li > a {
+    text-decoration: none;
+    color: #889098;
+}
 
+.header > .bottom > .center > .menu > ul > li > ul {
+    width: 1000px;
+    padding: 20px 0;
+    background-color: white;
+    
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -125px;
+    z-index: 1;
+    
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px  #a1a1a1;
+    border-bottom: 3px solid #bc264b;
+
+}
+
+.header > .bottom > .center > .menu > ul > li:hover > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header > .bottom > .center > .menu > ul > li > ul > ul > h4 > a {
+    color: #bc264b;
+    text-shadow: 1px 1px 2px #a1a1a1;
+}
+
+.header > .bottom > .center > .menu > ul > li > ul > ul > li {
+    font-size: 1em;
+    line-height: 30px;
+}
+
+.header > .bottom > .center > .menu > ul > li > ul > ul > li > a {
+    text-decoration: none;
+    color: #889098;
+}
+
+.header > .bottom > .center > .menu > ul > li > ul > ul > li:hover > a {
+    color: #bc264b;
+    text-shadow: 1px 0px 2px #a1a1a1;
+}
+
+.header > .bottom > .center > .menu > ul > li > ul > ul > h4 {
+    margin-bottom: 10px;
+    position: relative;
+    left: 10px;
+    font-size: 17px;
+}
 /* ---- Header Left Top ---- */
 
 .header > .bottom > .header-left {
